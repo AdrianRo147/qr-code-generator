@@ -6,3 +6,4 @@ Simple Java application for generating QR Codes based on entered text
 
 ## Comming soon
 - Reading text from QR Code img saved on your computer
+- Android app (Will be released in new repository)
