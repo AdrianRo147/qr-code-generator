@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.txt_to_qr'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'lib1', 'lib2'
+    }
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation files('libs/core-3.3.0.jar', 'libs/javase-3.3.0.jar')
+}
+
+test {
+    useJUnitPlatform()
+}
