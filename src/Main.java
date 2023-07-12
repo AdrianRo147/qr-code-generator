@@ -22,7 +22,7 @@ public class Main {
         MatrixToImageWriter.writeToFile(matrix, path.substring(path.lastIndexOf('.') + 1), new File(path));
     }
 
-    public static void main(String[] args) throws WriterException, IOException, NotFoundException {
+    public static void main(String[] args) throws WriterException, IOException, NotFoundException, UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         JTextField label = new JTextField("text");
         label.setColumns(16);
 
@@ -32,24 +32,21 @@ public class Main {
         panel.add(label);
         panel.add(button);
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
-        //panel.setLayout(new GridLayout());
 
         JFrame frame = new JFrame();
         frame.add(panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("QR CODE GENERATOR");
+        frame.setTitle("QR Code Generator");
         frame.setPreferredSize(new Dimension(300, 300));
         frame.show();
         frame.pack();
         frame.setVisible(true);
+        UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("Images", "jpg", "png"));
         fileChooser.setAcceptAllFileFilterUsed(false);
-
-        String path = "D:\\image.png";
         String charset = "UTF-8";
-
 
         button.addActionListener(e ->
         {
@@ -81,6 +78,5 @@ public class Main {
                 }
             }
         });
-
     }
 }
