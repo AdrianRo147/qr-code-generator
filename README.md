@@ -1,4 +1,5 @@
 # QR Code Generator
+[![Java CI with Gradle](https://github.com/AdrianRo147/qr-code-generator/actions/workflows/gradle.yml/badge.svg)](https://github.com/AdrianRo147/qr-code-generator/actions/workflows/gradle.yml)
 Simple Java application for generating QR Codes based on entered text
 
 ## Preview
