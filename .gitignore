@@ -27,6 +27,8 @@ replay_pid*
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea/
+META-INF/
 
 ### Eclipse ###
 .apt_generated
@@ -52,3 +54,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Gradle ###
+.gradle/
+build/
