@@ -43,7 +43,6 @@ public class Main {
         frame.show();
         frame.pack();
         frame.setVisible(true);
-        UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("Images", "jpg", "png"));
