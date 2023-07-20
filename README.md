@@ -1,6 +1,6 @@
 # QR Code Generator
-[![Java CI with Gradle](https://github.com/AdrianRo147/qr-code-generator/actions/workflows/gradle.yml/badge.svg)](https://github.com/AdrianRo147/qr-code-generator/actions/workflows/gradle.yml)
-Simple Java application for generating QR Codes based on entered text
+[![Java CI with Gradle](https://github.com/AdrianRo147/qr-code-generator/actions/workflows/gradle.yml/badge.svg)](https://github.com/AdrianRo147/qr-code-generator/actions/workflows/gradle.yml) <br>
+Simple Java application for generating QR Codes based on entered text <br>
 Tested and fully working on Windows 10 and Manjaro Linux
 
 ## Preview
@@ -25,5 +25,5 @@ If you wish to support me you can star this repo or donating me with crypto
 - Solana: A1AYkXJVsBmgyqoUUth1yz83ED61dLWF7XLMp2k53yCd
 
 ## Credits
-[https://www.javatpoint.com/generating-qr-code-in-java](https://www.javatpoint.com/generating-qr-code-in-java)
+[https://www.javatpoint.com/generating-qr-code-in-java](https://www.javatpoint.com/generating-qr-code-in-java) <br>
 [https://github.com/zxing/zxing](https://github.com/zxing/zxing)
