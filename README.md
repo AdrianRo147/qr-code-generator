@@ -26,3 +26,4 @@ If you wish to support me you can star this repo or donating me with crypto
 
 ## Credits
 [https://www.javatpoint.com/generating-qr-code-in-java](https://www.javatpoint.com/generating-qr-code-in-java)
+[https://github.com/zxing/zxing](https://github.com/zxing/zxing)
