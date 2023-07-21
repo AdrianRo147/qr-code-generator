@@ -4,10 +4,9 @@ Simple Java application for generating QR Codes based on entered text <br>
 Tested and fully working on Windows 10 and Manjaro Linux
 
 ## Preview
-![image](https://github.com/AdrianRo147/qr-code-generator/assets/99681165/f770903f-9039-4a2e-981d-79e0ed953233)
+![image](https://github.com/AdrianRo147/qr-code-generator/assets/99681165/e4de9f7c-2899-4bf0-994d-73072a87dc59)
 
 ## Comming soon
-- Reading text from QR Code img saved on your computer
 - Android app (Will be released in new repository or another branch)
 
 ## Issues
