@@ -51,13 +51,22 @@ public class ReadController {
     }
 
     public void generate(ActionEvent e) throws IOException, NotFoundException {
-        File file = fChooser.showOpenDialog(stage);
-        if (file != null) {
-            System.out.println("Decoded text: " + readQRcode(file.getAbsolutePath()));
-            Image img = new Image(file.getAbsolutePath());
-            ImageView imgView = new ImageView(img);
-            alert.setGraphic(imgView);
-            alert.setContentText("Content: " + readQRcode(file.getAbsolutePath()));
+        try {
+            File file = fChooser.showOpenDialog(stage);
+            if (file != null) {
+                System.out.println("Decoded text: " + readQRcode(file.getAbsolutePath()));
+                Image img = new Image(file.getAbsolutePath());
+                ImageView imgView = new ImageView(img);
+                imgView.setFitWidth(200);
+                imgView.setPreserveRatio(true);
+                alert.setGraphic(imgView);
+                alert.setContentText("Content: " + readQRcode(file.getAbsolutePath()));
+                alert.show();
+            }
+        }
+        
+        catch (NotFoundException exc) {
+            alert.setContentText("Error has occured, no QR Code found on picture");
             alert.show();
         }
     }
